@@ -35,6 +35,7 @@
      <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="../css/themes/all-themes.css" rel="stylesheet" />
 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body class="theme-pink">
@@ -284,7 +285,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="../images/user.png" width="48" height="48" alt="User" />
+                    <img src="../images/c.jpg" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Phạm Ngọc Quý</div>
@@ -312,7 +313,7 @@
                 
                     <li>
                         <a class="menu-toggle">
-                            <i class="material-icons">widgets</i>
+                            <i class="material-icons col-teal">widgets</i>
                             <span>Việc tôi yêu cầu</span>
                         </a>
                         <ul class="ml-menu"> 
@@ -352,7 +353,7 @@
                     </li>
                     <li>
                         <a  class="menu-toggle">
-                            <i class="material-icons">swap_calls</i>
+                            <i class="material-icons col-light-green">swap_calls</i>
                             <span>Công việc liên quan</span>
                         </a>
                         <ul class="ml-menu"> 
@@ -385,6 +386,87 @@
                                     <span class="badge bg-purple">18</span>
                                 </li>
                               </ul>
+                           </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu-toggle">
+                            <i class="material-icons col-indigo">assignment</i>
+                            <span>Việc tôi được giao</span>
+                        </a>
+                        <ul class="ml-menu"> 
+                            <div class="body">
+                            <ul class="list-group">
+                                 <li class="list-group-item">
+                                    <i class="material-icons-menu">view_list</i>
+                                    <span>All</span>
+                                    <span class="badge bg-pink">14 new</span>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <i class="material-icons-menu">mail_outline</i>
+                                    <span>New</span>
+                                    <span class="badge bg-cyan">99 read</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="material-icons-menu">move_to_inbox</i>
+                                    <span>Inprogress</span>
+                                    <span class="badge bg-teal">99+</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="material-icons-menu">present_to_all</i>
+                                    <span>Resolved</span>
+                                    <span class="badge bg-orange">21</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="material-icons-menu">today</i>
+                                    <span>Out Of Date</span>
+                                    <span class="badge bg-purple">18</span>
+                                </li>
+                            </ul>
+                           </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu-toggle">
+                            <i class="material-icons col-blue">device_hub</i>
+                            <span>Công việc của team</span>
+                        </a>
+                         <ul class="ml-menu"> 
+                            <div class="body">
+                            <ul class="list-group">
+                                 <li class="list-group-item">
+                                    <i class="material-icons-menu">view_list</i>
+                                    <span>All</span>
+                                    <span class="badge bg-pink">14 new</span>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <i class="material-icons-menu">mail_outline</i>
+                                    <span>New</span>
+                                    <span class="badge bg-cyan">99 read</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="material-icons-menu">move_to_inbox</i>
+                                    <span>Inprogress</span>
+                                    <span class="badge bg-teal">99+</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="material-icons-menu">feedback</i>
+                                    <span>Feedback</span>
+                                    <span class="badge bg-orange">21</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="material-icons-menu">today</i>
+                                    <span>Out Of Date</span>
+                                    <span class="badge bg-purple">18</span>
+                                </li>
+                                 <li class="list-group-item">
+                                    <i class="material-icons-menu">closed_caption</i>
+                                    <span>Closed</span>
+                                    <span class="badge bg-purple">18</span>
+                                </li>
+                            </ul>
                            </div>
                         </ul>
                     </li>
@@ -553,18 +635,21 @@
 
     <section class="content">
         <div class="container-fluid">
-            <!-- <div class="block-header">
+           <!--  <div class="block-header">
                 <h2>
-                    Thêm công việc
+                    JQUERY DATATABLES
+                    <small>Taken from <a href="https://datatables.net/" target="_blank">datatables.net</a></small>
                 </h2>
             </div> -->
-            <!-- Basic Validation -->
+            <!-- Exportable Table -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2 style="font-size: 25px;">Thêm công việc</h2>
-                            <!-- <ul class="header-dropdown m-r--5">
+                            <h2>
+                                Danh sách công việc
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         <i class="material-icons">more_vert</i>
@@ -575,65 +660,160 @@
                                         <li><a href="javascript:void(0);">Something else here</a></li>
                                     </ul>
                                 </li>
-                            </ul> -->
+                            </ul>
                         </div>
                         <div class="body">
-                            <form id="form_validation" method="POST">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                                    <thead>
+                                        <tr>
+                                            <th>Số thứ tự</th>
+                                            <th>Tên công việc</th>
+                                            <th>Mức độ ứu tiên</th>
+                                            <th>Người yêu cầu</th>
+                                            <th>Người thực hiện</th>
+                                            <th>Ngày hết hạn</th>
+                                            <th>Trạng thái</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Số thứ tự</th>
+                                            <th>Tên công việc</th>
+                                            <th>Mức độ ứu tiên</th>
+                                            <th>Người yêu cầu</th>
+                                            <th>Người thực hiện</th>
+                                            <th>Ngày hết hạn</th>
+                                            <th>Trạng thái</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
+                                            <tr>
+                                            <td>6</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
+                                         </tr>
+                                            <tr>
+                                            <td>7</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
+                                         
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
 
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" required>
-                                        <label class="form-label">Tên công việc *</label>
-                                    </div>
-                                </div>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
 
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="priority"  required>
-                                        <label class="form-label">Mức độ ưu tiên</label>
-                                    </div>
-                                </div>
+                                         </tr>
+                                            <tr>
+                                            <td>11</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
 
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="email" class="form-control"  name="out_of_date" required>
-                                        <label class="form-label">Ngày hết hạn*</label>
-                                    </div>
-                                </div>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Cài win</td>
+                                            <td>Ưu tiên cao vkl</td>
+                                            <td>Con ô sin</td>
+                                            <td>Anh cài win</td>
+                                            <td>20-11-2017</td>
+                                            <td>Đã đóng</td>
+                                        </tr>
 
-                              <!--    <div>
-                                    
-                                         <select >
-                                            <option>Mustard</option>
-                                            <option>Ketchup</option>
-                                            <option>Relish</option>
-                                        </select>
-                                   
-                                </div> -->
-                                
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="relative" required>
-                                        <label class="form-label">Người liên quan</label>
-                                    </div>
-                                </div>  
-
-                                <!--  <div class="form-group form-float">
-                                    <div class="form-label">
-                                         <span>Nội dung*</span>   
-                                        <textarea id="tinymce" name="description" cols="30" rows="5" class="form-control no-resize" required></textarea>
-                                    </div>
-                                </div> -->
-
-                                <button class="btn btn-primary waves-effect" type="submit">SUBMIT</button>
-                            </form>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- #END# Basic Validation -->
+            <!-- #END# Exportable Table -->
         </div>
     </section>
+
 
    
     <!-- Jquery Core Js -->
@@ -648,35 +828,28 @@
     <!-- Slimscroll Plugin Js -->
     <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
-
-     <!-- Jquery Validation Plugin Css / validate content-->
-    <script src="../plugins/jquery-validation/jquery.validate.js"></script>
-
-    <!-- JQuery Steps Plugin Js -->
-    <script src="../plugins/jquery-steps/jquery.steps.js"></script>
-
-    <!-- Sweet Alert Plugin Js -->
-    <script src="../plugins/sweetalert/sweetalert.min.js"></script>
-
     <!-- Waves Effect Plugin Js -->
     <script src="../plugins/node-waves/waves.js"></script>
 
-    
-
-    <!-- TinyMCE -->
-     <script src="../plugins/tinymce/tinymce.js"></script> 
-
     <!-- Custom Js -->
     <script src="../js/admin.js"></script>
-    <script src="../js/pages/forms/form-validation.js"></script>
-    <script src="../js/pages/forms/editors.js"></script>
- 
+
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
 
-    
+    <!-- Jquery DataTable Plugin Js -->
+    <script src="../plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+    <script src="../plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
 
-
+     <!-- Custom Js -->
+    <script src="../js/pages/tables/jquery-datatable.js"></script>
 </body>
 
 </html>
