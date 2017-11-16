@@ -1,11 +1,13 @@
 $(function () {
-   
+    //CKEditor
+    //CKEDITOR.replace('ckeditor');
+    //CKEDITOR.config.height = 100;
 
     //TinyMCE
     tinymce.init({
         selector: "textarea#tinymce",
         theme: "modern",
-        height: 300,
+        height: 150,
         plugins: [
             'advlist autolink lists link image charmap print preview hr anchor pagebreak',
             'searchreplace wordcount visualblocks visualchars code fullscreen',

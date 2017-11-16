@@ -41,5 +41,11 @@ direction: ltr;
     position: relative;
     border-bottom: 1px solid #e9e9e9;
     background: url("../images/b.jpg") no-repeat no-repeat;
-    height: 135px; }
-
+    height: 135px;
+}
+.text-label{
+	margin-left: 13px;
+}
+#tinymce{
+	height: 150px;
+}
